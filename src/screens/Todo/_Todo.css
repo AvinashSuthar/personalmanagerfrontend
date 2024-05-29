@@ -1,0 +1,74 @@
+.editform{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.editform>input{
+  width: 80%;
+  height: 50px;
+  /* margin: 5px; */
+  border: none;
+  background-color: transparent;
+}
+input:focus {
+  outline: none;
+  border-radius: 10px;
+  border-color: transparent; /* Hide the border when textarea is focused */
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Add a shadow when textarea is focused */
+}
+.editbtn{
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: large;
+  /* margin-top: 5px; */
+  
+}
+
+.editform>div{
+  position: absolute;
+  bottom: -10px;
+  left: 10%;
+  /* gap: 20px; */
+}
+.todo {
+  position: relative;
+  padding: 10px;
+  /* padding-bottom: 30px; */
+  margin: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+}
+
+.todoActions {
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  z-index: 10;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.todo:hover .todoActions {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  /* Adjust width for smaller screens */
+  .createForm {
+    width: 90%;
+  }
+
+}
+.msg{
+  position:absolute;
+  left: 10% !important; 
+  right: 10% !important;
+   top: 100px;
+    background-color: lightblue; 
+    border-radius: 10px;
+     z-index : 9999 ;
+}

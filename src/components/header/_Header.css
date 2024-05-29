@@ -1,0 +1,96 @@
+/* _Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(100deg, #c634dd, #2f2fdb);
+
+
+  color: #fff;
+}
+
+.brand {
+  font-size: 24px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user span {
+  margin-right: 10px;
+}
+
+.buttons button {
+  margin-right: 10px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #4a00e0;
+}
+/* _Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.brand {
+  margin: 0;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  /* margin-right: 50px; */
+  cursor: pointer;
+  position: relative;
+}
+
+.user-actions {
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  transform: translateX(-80%);
+  padding-top: 10px;
+  background-color: #4a00e0;
+  border-radius: 5px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.avatar:hover .user-actions {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.btn {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

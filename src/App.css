@@ -1,0 +1,44 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+    flex-direction: column;
+}
+/* Custom scrollbar for the entire application */
+body::-webkit-scrollbar {
+  width: 5px; /* Width of the vertical scrollbar */
+  height: 5px; /* Height of the horizontal scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* Transparent background for the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(135deg , blue, violet); /* Gradient from violet to blue for the scrollbar thumb */
+  border-radius: 6px; /* Roundness of the scrollbar thumb */
+  /* border: 3px solid transparent; Padding around the scrollbar thumb */
+  transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8; /* Increase opacity of the scrollbar thumb on hover */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+}
