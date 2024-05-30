@@ -81,7 +81,7 @@ const Signup = () => {
           <h2>Enter OTP</h2>
           {error && <div className="error">{error}</div>}
           <div className='form-group'>
-          <label>Email</label>
+          <label>Enter OTP</label>
           <input
             type="text"
             value={otp}

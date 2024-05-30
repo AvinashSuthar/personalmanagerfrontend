@@ -69,7 +69,7 @@ const ForgotPassword = ({ onBackToLogin }) => {
         <form onSubmit={handleVerifyOtp} className='signup-form '>
           <h2>Enter OTP </h2>
           <div className='form-group'>
-          <label>Email</label>
+          <label>Enter OTP</label>
           <input
             type="text"
             value={otp}
@@ -85,7 +85,7 @@ const ForgotPassword = ({ onBackToLogin }) => {
         <form onSubmit={handleResetPassword} className='signup-form '> 
           <h2>Enter new password</h2>
           <div className='form-group'>
-          <label>Email</label>
+          <label>New Password</label>
           <input
             type="password"
             value={password}

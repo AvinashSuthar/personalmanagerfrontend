@@ -5,7 +5,7 @@ import './_Home.css'; // Import your CSS file for styling
 function Home() {
   return (
     <div className="notes-container">
-      <div className="notes m-2 ">
+      <div className="notes m-auto ">
         <Card title="FaStickyNote" heading="Notes" text="Jot down your ideas and inspirations..." path="/notes" />
         <Card title="FaTasks" heading="Todos" text="Prioritize your to-dos and stay productive..." path="/todo" />
         <Card title="FaCalendarAlt" heading="Scheduler" text="Plan your schedule ahead and never miss an important date..." path="/scheduler" />

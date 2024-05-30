@@ -4,8 +4,8 @@
   height: 200px;
   margin: 10px;
   border: 0px solid #ccc;
-  background-color: rgba(200, 200, 200, 0.03) !important;
-
+  /* background-color: rgba(200, 200, 200, 0.03) !important; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 20px;
   text-align: center;
   overflow: hidden;
@@ -14,7 +14,7 @@
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
 .card-icon {
